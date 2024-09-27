@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tandhuis Dental Laboratory</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .form-section {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .diagram-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .diagram {
+            width: 45%;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Tandhuis Dental Laboratory</h1>
+
+<form>
+
+    <!-- Contact Details -->
+    <div class="form-section">
+        <h2>Contact Details</h2>
+        <label for="dentist">Dentist</label>
+        <select id="dentist" name="dentist" required>
+            <option value="Mark Willems">Mark Willems</option>
+            <option value="Bo Decroos">Bo Decroos</option>
+            <option value="Emmerson Gruyaert">Emmerson Gruyaert</option>
+            <option value="Linde Eggermont">Linde Eggermont</option>
+            <option value="Louis Simoen">Louis Simoen</option>
+        </select>
+
+        <label for="clinic">Clinic</label>
+        <select id="clinic" name="clinic" required>
+            <option value="Tandhuis Heusden">Tandhuis Heusden</option>
+        </select>
+
+        <label for="address">Address</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="patient-name">Patient Name</label>
+        <input type="text" id="patient-name" name="patient-name" required>
+
+        <label for="entry-date">Entry Date</label>
+        <input type="date" id="entry-date" name="entry-date" required>
+
+        <label for="due-date">Due Date</label>
+        <input type="date" id="due-date" name="due-date" required>
+    </div>
+
+    <!-- Work Type, and Material -->
+    <div class="form-section">
+        <h2>Tooth Details</h2>
+        <p>Select the teeth involved in the work:</p>
+        <img src="file:///Users/cristianciocirlan/Desktop/Orderform%20.fld/image002.png" alt="Dental Diagram" style="width:30%;">
+
+        <h3>Tooth Color (VITA 3D-Master)</h3>
+        <label for="tooth-color">Select Tooth Color</label>
+        <select id="tooth-color" name="tooth-color">
+            <option value="1M1">1M1</option>
+            <option value="1M2">1M2</option>
+            <option value="2M1">2M1</option>
+            <option value="2M2">2M2</option>
+            <option value="2M3">2M3</option>
+            <option value="3M1">3M1</option>
+            <option value="3M2">3M2</option>
+            <option value="3M3">3M3</option>
+            <option value="4M1">4M1</option>
+            <option value="4M2">4M2</option>
+            <option value="4M3">4M3</option>
+        </select>
+
+        <h3>Work Type</h3>
+        <label for="work-type">Select Work Type</label>
+        <select id="work-type" name="work-type" required>
+            <option value="Crown">Crown</option>
+            <option value="Bridge">Bridge</option>
+            <option value="Inlay/Onlay">Inlay/Onlay</option>
+            <option value="WaxUp">Wax Up</option>
+        </select>
+
+        <h3>Material Used</h3>
+        <label for="material">Select Material</label>
+        <select id="material" name="material" required>
+            <option value="Printed">Emax</option>
+            <option value="Milled">Zirconia</option>
+        </select>
+
+        <h3>Work Type (Temporary or Definitive)</h3>
+        <label for="work-type-final">Select Type</label>
+        <select id="work-type-final" name="work-type-final" required>
+            <option value="Temporary">Temporary</option>
+            <option value="Definitive">Definitive</option>
+        </select>
+    </div>
+
+    <!-- Notes -->
+    <div class="form-section">
+        <h2>Notes</h2>
+        <textarea id="notes" name="notes" rows="4" placeholder="Enter any additional notes..."></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit Form</button>
+
+</form>
+
+</body>
+</html>
